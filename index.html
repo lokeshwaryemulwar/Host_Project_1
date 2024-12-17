@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="./assets/css/welcome.css" />
+  </head>
+  <body>
+    <div class="welcome-container">
+      <h1>Welcome to the Memory Card Game</h1>
+      <p>INSTRUCTIONS</p>
+      <ul>
+        <li>Make pairs of similar blocks by flipping them.</li>
+        <li>To flip a block, click on it.</li>
+        <li>If two blocks you clicked are not similar, they will be flipped back.</li>
+      </ul>
+      <button class="start-btn">Start Game</button>
+    </div>
+    <script>
+      document.querySelector(".start-btn").addEventListener("click", () => {
+        window.location.href = "./game.html";
+      });
+    </script>
+  </body>
+  <style>
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #89cff0, #f0e68c);
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 20px 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+ul {
+  list-style: disc inside;
+  text-align: left;
+  margin: 20px 0;
+  padding: 0;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.start-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #9bcdea;
+  color: #000000;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background: #85bdde;
+}
+
+  </style>
+</html>
